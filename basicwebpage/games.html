@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur's Gaming site</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+    <style>
+        /* Slider with Portrait Image Adjustments */
+        #gameSlider {
+            margin-top: 5px; /* Space between navbar and slider */
+        }
+        #gameSlider .carousel-item {
+            height: 80vh; /* Increased height to fit more of the portrait image */
+            min-height: 500px; /* Minimum height for smaller screens */
+        }
+        #gameSlider .carousel-item img {
+            width: auto; /* Keeps image width auto to maintain aspect ratio */
+            height: 100%;
+            max-height: 80vh;
+            object-fit: contain; /* Use contain to display the entire image without cropping */
+            object-position: center; /* Centers the image */
+        }
+        /* Dark Mode Background */
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    /* Dark Navbar */
+    .navbar {
+        background-color: #1f1f1f;
+    }
+
+    /* Dark Cards */
+    .card {
+        background-color: #2c2c2c;
+        color: #ffffff;
+        border: 1px solid #444;
+    }
+
+    /* Dark Buttons */
+    .btn-primary {
+        background-color: #bb86fc;
+        border-color: #bb86fc;
+    }
+
+    /* Adjusting Links */
+    a {
+        color: #bb86fc;
+    }
+    </style>   
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="bi bi-controller"></i>  Arthur's Gaming Haven</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="games.html">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Slider -->
+    <div id="gameSlider" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://www.rockstargames.com/reddeadredemption2"><img src="assets/images/sliderrdr2.png" class="d-block w-100" alt="Game 1"></a>
+                <img src="assets/images/sliderrdr2.png" class="d-block w-100" alt="Game 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Red Dead Redemption 2</h5>
+                    <p>Heart Touch Story Mode</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.rockstargames.com/reddeadredemption"><img src="assets/images/sliderrdr1.jpg" class="d-block w-100" alt="Game 2"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Red Dead Redemption </h5>
+                    <p>Start John's Revenge</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.rockstargames.com/gta-v"><img src="assets/images/slidergta5.jpg" class="d-block w-100" alt="Game 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 style="color: black;">Grand Theft Auto V</h5>
+                    <p style="color: black;">Action Adventure</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/"><img src="assets/images/slider last.jpg" class="d-block w-100" alt="Game 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>The Last Of Us</h5>
+                    <p>Horor Action Adventure </p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla"><img src="assets/images/sliderassassian.jpg" class="d-block w-100" alt="Game 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Assassin's Creed Valhalla</h5>
+                    <p>Action Adventure</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://store.steampowered.com/app/2322010/God_of_War_Ragnark/"><img src="assets/images/slidergod-of-war.jpg" class="d-block w-100" alt="Game 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>God Of War Ragnarök</h5>
+                    <p>Best Action Adventure Series</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.pubg.com/en/main"><img src="assets/images/sliderpubg.jpg" class="d-block w-100" alt="Game 3"></a>
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>PlayerUnknown's Battle Grounds ( PUBG )</h5>
+                    <p>Multiplayer Battle Game</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#gameSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#gameSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="container my-5" id="games">
+        <h2 class="text-center mb-4">Open World</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/rdr2ico.jpg" class="card-img-top" alt="Game 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Dead Redemption 2</h5>
+                        <p class="card-text">Immerse yourself in an epic adventure. Hreat Touch Story</p>
+                        <a href="https://www.rockstargames.com/reddeadredemption2" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/rdr1ico.jpg" class="card-img-top" alt="Game 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Red Dead Redemption</h5>
+                        <p class="card-text">Explore an open-world masterpiece.</p>
+                        <a href="https://www.rockstargames.com/reddeadredemption" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/gta5ico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Theft Auto V</h5>
+                        <p class="card-text">21st century Best Open World.</p>
+                        <a href="https://www.rockstargames.com/gta-v" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/pubgico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">PUBG</h5>
+                        <p class="card-text">Best Online Battle Ground</p>
+                        <a href="https://www.pubg.com/en/main" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/assassionico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Assassin's Creed Valhalla</h5>
+                        <p class="card-text">Action Adventure Story</p>
+                        <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mb-4">Zombiee Game</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/lat of us.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">The Last Of Us</h5>
+                        <p class="card-text">A thrilling action game that you can't miss.</p>
+                        <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mb-4">Series Game</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/godofwarico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">God Of War Ragnarök</h5>
+                        <p class="card-text">Best Action Adventure Series</p>
+                        <a href="https://store.steampowered.com/app/2322010/God_of_War_Ragnark/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/gta5ico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Grand Theft Auto V</h5>
+                        <p class="card-text">21st century Best Open World.</p>
+                        <a href="https://www.rockstargames.com/gta-v" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/assassionico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Assassin's Creed Valhalla</h5>
+                        <p class="card-text">Action Adventure Story</p>
+                        <a href="https://www.ubisoft.com/en-gb/game/assassins-creed/valhalla" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mb-4">Fun With Play</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/amongusico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Among Us</h5>
+                        <p class="card-text">Fun with play</p>
+                        <a href="https://store.epicgames.com/en-US/p/among-us" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/humanffico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Human: Fall Flat</h5>
+                        <p class="card-text">Fun with play</p>
+                        <a href="https://store.steampowered.com/app/477160/Human_Fall_Flat/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/deathbyico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dead by Daylight</h5>
+                        <p class="card-text">Fun with play and Horror</p>
+                        <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mb-4">Horror Games</h2>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/lat of us.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">The Last Of Us</h5>
+                        <p class="card-text">A thrilling action game that you can't miss.</p>
+                        <a href="https://store.steampowered.com/app/1888930/The_Last_of_Us_Part_I/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/images/icons/deathbyico.jpg" class="card-img-top" alt="Game 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dead by Daylight</h5>
+                        <p class="card-text">Fun with play and Horror</p>
+                        <a href="https://store.steampowered.com/app/381210/Dead_by_Daylight/" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Arthur's Gaming Haven. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
